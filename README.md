@@ -199,18 +199,18 @@ KEXTs: https://onedrive.live.com/?cid=fe4038da929bfb23&id=FE4038DA929BFB23%21455
    * If it gives you an error that says "Boot Failed" then unplug the flash drive, restart the computer, and plug the flash drive back in.
    * If you did not get an error, the screen will flood with white text and once the progress bar finishes you will be greeted with the setup of MacOS!
 
-## Adding Clover to the Main Drive
+## Adding a Bootloader (OpenCore) to the Main Drive
 
 Congratulations! If you made it this far then you have successfully installed MacOS!
 * Go through the set up. I opted out of all informational data and turned everything off I did not want or did not want Apple to find out.
 * I added my iCloud account within this step, but if you opt out for now there will be instructions on how to add it later once everything is setup.
-1. Open Safari and search for "Clover Configurator".
+1. Open Safari and search for "Clover Configurator", this will allow us to mount the EFI partition.
 2. Download it from "Mackie100Projects" and press "Allow" to allow it to download.
 3. Open the Clover Application you just downloaded.
    * If it does not allow you to open it or gives you an error go to System Preferences > Security and Privacy > "Open Anyway" (bottom right of the window) > "Open"
 4. With Clover opened, select "Mount EFI" on the left-hand side, select your drive (with the name you gave it), and select "Mount Partition".
 5. "Open Partition" and open the "CLOVER" disk on the right-hand side of the desktop.
-6. Drag and drop the "EFI" folder from the "CLOVER" disk to your drive partition you just opened.
+6. Drag and drop the "EFI" folder from the "CLOVER" disk to your drive partition you just opened to use our working OpenCore bootloader.
 7. Close both windows and select "Unmount Partition" in the Clover Application (grey text above Open Partition).
 8. Click the Apple logo on the top left of the screen and select "Shut Down" (this may take a second).
 9. Unplug the flash drive and boot into the boot menu once more.
